@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+<style>
+
+</style>
+    <title>Collisions(map)</title>
+    <!-- LeafletJS CSS file -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <!-- LeafletJS JS file (must place after Leaflet's CSS file) -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <link href="style2.css" rel="stylesheet" type="text/css"/> 
+    <script src="helper.js"></script>
+    <script src="script2.js"></script>
+   </head>
+  <body onload="init()">
+  <div id="loader-wrapper">
+        <div id="loader"></div>
+    <div id="banner" class="container center">
+      <h1> InformationPage </h1>
+    </div>
+<nav class="container">
+      <a href="home.html">Home</a>
+	  <a href="InformationPage.html">InformationPage</a>
+      <a href="AnalysisPage.html">AnalysisPage</a>
+    </nav>
+    <div class="container subbanner">
+        <p>This is information about agencys across New york city and also the location of where it is at. </p>
+       </div>
+    </div>
+
+</div>
+    <div class="container">
+      <input type="text" id="borough" placeholder="Enter borough" > &nbsp; <a class="button" onclick="filterByBoro()"> Search by Borough </a>
+  
+  <input type="text" id="Bigcenter" placeholder="Enter CENTER" > &nbsp; <a class="button" onclick="filterBycenter()"> Search by CENTER </a>
+    </div>
+
+    <div id="output" id="myDIV" class="container">
+      <div id="leftPanel" class="container"></div>
+      <!-- div for LeafletJS map -->
+      <div id="map"></div>
+    </div>
+    
+    <div id="footer" class="container center">
+
+  
+    </div>  
+  </body>
+</html>
